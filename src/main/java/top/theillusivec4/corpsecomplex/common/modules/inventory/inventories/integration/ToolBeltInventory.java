@@ -68,7 +68,7 @@ public class ToolBeltInventory implements Inventory {
 
       if (tag != null) {
         ItemStack stack = ItemStack.read(tag);
-        BeltFinder.setFinderSlotContents(player, BeltFinderBeltSlot.FINDER_ID, 0, stack);
+        BeltFinder.setBeltFromPacket(player, BeltFinderBeltSlot.FINDER_ID, 0, stack);
       }
     }
   }
